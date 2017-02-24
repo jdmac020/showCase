@@ -1,0 +1,16 @@
+﻿<!-- Html for the Index view--main view of the application to both receive and deliver the input -->
+
+@model  MacGregorAbacus.Models.AbacusViewModel
+
+
+@using (Html.BeginForm("RunAbacus", "Home", FormMethod.Post))
+{
+    <h1>Magic Addition Abacus</h1>
+    @Html.TextBoxFor(m => m.FirstNumber)
+    <label>+</label>
+    @Html.TextBoxFor(m => m.SecondNumber)
+    <input type="submit" value="=" />
+    <input type="text" readonly="readonly" value="@Model.ResultNumber" />
+    <br />
+    <div>@Html.ValidationSummary(false, "", new { @class = "text-danger"})</div>
+}

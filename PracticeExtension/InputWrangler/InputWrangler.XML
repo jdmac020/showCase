@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InputWrangler</name>
+    </assembly>
+    <members>
+        <member name="T:InputWrangler.ParseMaskedBoxes">
+            <summary>
+            Tools for parsing MaskedTextBox controls, leveraging TextBoxArgumentException class to streamline feedback to user.
+            </summary>
+            <exception cref="T:InputWrangler.TextBoxArgumentException"></exception>
+        </member>
+        <member name="M:InputWrangler.ParseMaskedBoxes.GetNumberString(System.Windows.Forms.MaskedTextBox)">
+            <summary>
+            Accepts a masked textbox and returns a string of only the entered numbers. 
+            </summary>
+            <exception cref="T:InputWrangler.TextBoxArgumentException"></exception>
+        </member>
+        <member name="M:InputWrangler.ParseMaskedBoxes.GetLetterString(System.Windows.Forms.MaskedTextBox)">
+            <summary>
+            Accepts a masked textbox and returns a string of only the entered numbers. 
+            </summary>
+            <exception cref="T:InputWrangler.TextBoxArgumentException"></exception>
+        </member>
+        <member name="T:InputWrangler.ParseString">
+            <summary>
+            Tools for parsing strings and streamlining exception handling.
+            </summary>
+        </member>
+        <member name="M:InputWrangler.ParseString.GetDecimal(System.String)">
+            <summary>
+            Takes a string and returns a decimal value. Will throw exception for empty string and string that will not parse.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseString.GetInt(System.String)">
+            <summary>
+            Takes a string and returns an Int32 value.  Will throw exception for empty string and string that will not parse.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseString.GetDouble(System.String)">
+            <summary>
+            Takes a string and returns a double value.  Will throw exception for empty string and string that will not parse.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseString.GetChar(System.String)">
+            <summary>
+            Takes a string and returns a char value.  Will throw exception for empty string and string that will not parse.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseString.GetMaskedNumbers(System.String)">
+            <summary>
+            Takes a string that includes masking characters and returns a string of only numbers.  
+            Will throw exception for empty string.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseString.GetMaskedLetters(System.String)">
+            <summary>
+            Takes a string that includes masking characters and returns a string of only letters.  
+            Will throw exception for empty string.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseString.ConvertFraction(System.String,System.String)">
+            <summary>
+            Takes two strings representing the numerator and denominator of a fraction and returns a decimal value.  
+            Will throw exception for empty string, 0 denominator, and strings that won't parse to decimal value.
+            </summary>
+            <exception cref="T:System.ArgumentException"></exception> 
+            <exception cref="T:System.DivideByZeroException"></exception> 
+        </member>
+        <member name="T:InputWrangler.ParseTextBox">
+            <summary>
+            Tools for parsing TextBox controls, leveraging TextBoxArgumentException class to streamline feedback to user.
+            </summary>
+            <exception cref="T:InputWrangler.TextBoxArgumentException"></exception>
+        </member>
+        <member name="M:InputWrangler.ParseTextBox.GetDecimal(System.Windows.Forms.TextBoxBase)">
+            <summary>
+            Accepts a textbox value and returns a decimal value. Will throw exception for empty string and string that will not parse.
+             <para> Exception returns the throwing text box to streamline feedback to user. </para>
+            </summary>
+             <exception cref="T:InputWrangler.TextBoxArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseTextBox.GetInt(System.Windows.Forms.TextBoxBase)">
+            <summary>
+            Accepts a textbox value and returns an Int32 value. Will throw exception for empty string and string that will not parse.
+            <para> Exception returns the throwing text box to streamline feedback to user. </para>
+            </summary>
+            <exception cref="T:InputWrangler.TextBoxArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseTextBox.GetDouble(System.Windows.Forms.TextBox)">
+            <summary>
+            Takes a string and returns a double value.  Will throw exception for empty string and string that will not parse.
+            </summary>
+             <exception cref="T:InputWrangler.TextBoxArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseTextBox.GetChar(System.Windows.Forms.TextBox)">
+            <summary>
+            Takes a string and returns a char value.  Will throw exception for empty string and string that will not parse.
+            </summary>
+             <exception cref="T:InputWrangler.TextBoxArgumentException"></exception> 
+        </member>
+        <member name="M:InputWrangler.ParseTextBox.ConvertFraction(System.Windows.Forms.TextBox,System.Windows.Forms.TextBox)">
+            <summary>
+            Takes two strings representing the numerator and denominator of a fraction and returns a decimal value.  Will throw exception for empty string, 0 denominator.
+            </summary>
+             <exception cref="T:System.ArgumentException"></exception> 
+             <exception cref="T:System.DivideByZeroException"></exception> 
+        </member>
+        <member name="T:InputWrangler.TextBoxArgumentException">
+            <summary>
+            Extension of the ArgumentException class that includes the TextBox control that triggered the exception.
+            </summary>
+        </member>
+        <member name="M:InputWrangler.TextBoxArgumentException.#ctor(System.String,System.Windows.Forms.TextBoxBase)">
+            <summary>
+            Initializes a new instance of TextBoxArgumentException class that includes a reference to the TextBox control 
+            that triggered the exception.
+            </summary>
+        </member>
+    </members>
+</doc>

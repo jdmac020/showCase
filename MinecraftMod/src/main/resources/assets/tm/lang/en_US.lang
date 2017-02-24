@@ -1,0 +1,40 @@
+//Items
+item.gold_coin.name=Gold Coin
+item.copper_coin.name=Copper Coin
+item.iron_coin.name=Iron Coin
+item.ruby.name=Ruby
+item.copper_ingot.name=Copper Ingot
+item.copper_nugget.name=Copper Bit
+item.iron_nugget.name=Iron Bit
+item.gold_nugget.name=Gold Bit
+
+//Tools
+item.ruby_axe.name=Ruby Axe
+item.ruby_pickaxe.name=Ruby Pick
+item.ruby_shovel.name=Ruby Shovel
+
+item.copper_axe.name=Copper Axe
+item.copper_pickaxe.name=Copper Pick
+item.copper_shovel.name=Copper Shovel
+
+//Weapons
+item.ruby_sword.name=Ruby Sword
+item.copper_sword.name=Copper Sword
+
+//Ore Blocks
+tile.ruby_ore.name=Ruby Ore
+tile.copper_ore.name=Copper Ore
+
+//Blocks
+tile.copper_block.name=Block o' Copper
+tile.ruby_block.name=Block o' Rubies
+
+//Foods
+item.butter.name=Butter
+
+//Tabs
+itemGroup.tabTutorialItems=Mod Items
+itemGroup.tabTutorialFood=Mod Food
+itemGroup.tabTutorialBlocks=Mod Blocks
+itemGroup.tabTutorialTools=Mod Tools
+itemGroup.tabTutorialWeapons=Mod Weapons
