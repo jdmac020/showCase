@@ -1,0 +1,1 @@
+Final lab in C#I semester, leveraging a restful API service to pull in exchange data. Additional features above assignment included a mechanism to store exchange rate data in the event of no internet connectivity, and exceptions for when internet connection/missing stored data occur.
